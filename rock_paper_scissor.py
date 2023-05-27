@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import *;
 from PIL import Image,ImageTk
 from random import randint
 
@@ -49,6 +49,13 @@ msg.place(x=718,y=803)
 #update message
 def updateMessage(x):
     msg['text']=x
+
+#playerNameLabel = Label(root, text="Player Name:", font=50, bg="#9b59b6", fg="white")
+#playerNameLabel.grid(row=2, column=0)
+#playerNameEntry = Entry(root, font=50)
+#playerNameEntry.grid(row=2, column=1)
+#playerScoreLabel = Label(root, text="Score: 0", font=50, bg="#9b59b6", fg="white")
+#playerScoreLabel.grid(row=2, column=2)
 
 #update user score
 def updateUserScore():
@@ -141,7 +148,7 @@ def updateChoice(x):
 #buttons
 rock=Button(root,width=20,height=2,text="ROCK",bg="#FF3E4D",fg="black",command=lambda:updateChoice("rock"),activeforeground='red',font=("bold")).grid(row=2,column=2)
 paper=Button(root,width=20,height=2,text="PAPER",bg="#FAD02E",fg="black",command=lambda:updateChoice("paper"),activeforeground='red',font=("bold")).grid(row=2,column=3)
-scissor=Button(root,width=20,height=2,text="SCISSOR",bg="#0ABDE3",fg="black",command=lambda:updateChoice("scissor"),activeforeground='red',font=("bold")).place(x=918,y=703)
+scissor=Button(root,width=20,height=2,text="SCISSOR",bg="#0ABDE3",fg="black",command=lambda:updateChoice("scissor"),activeforeground='red',font=("bold")).place(x=717,y=507)#.grid(row=2,column=4)#.place(x=918,y=703)
 
 
 
